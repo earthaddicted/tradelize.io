@@ -7,7 +7,9 @@ footer {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
-	max-width: 100%;
+	max-width: 100vw;
+	width: 100%;
+	overflow-x: hidden;
 
 	.block-wrapper__top {
 		display: flex;
