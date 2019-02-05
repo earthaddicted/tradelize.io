@@ -22,7 +22,7 @@ $('.carousel-video').owlCarousel({
     }
 })
 
-$(window).on('resize',function(){
+// $(window).on('resize',function(){
 if ($(window).width() < 968) {
 	$('.menu-container').on('click', function(e){
 			$(this).find('.menu-block').slideToggle('open');
@@ -32,7 +32,7 @@ if ($(window).width() < 968) {
 			return false;
 		});
 	}
-});
+// });
 
 // slider features
 	function postsCarousel() {
