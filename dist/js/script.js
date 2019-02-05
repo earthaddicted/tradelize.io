@@ -24,14 +24,15 @@ $('.carousel-video').owlCarousel({
 
 // $(window).on('resize',function(){
 if ($(window).width() < 968) {
-	$('.menu-container').on('click', function(e){
-			$(this).find('.menu-block').slideToggle('open');
-		})
-	} else {
-		$('.menu-container').click(function(){
-			return false;
-		});
-	}
+	$('footer .menu-container').on('click', function(e){
+		$(this).find('.menu-block').toggleClass('open');
+		console.log('clicked');
+	})
+} else {
+	$('.menu-container').click(function(){
+		return false;
+	});
+}
 // });
 
 // slider features
