@@ -119,6 +119,7 @@ a {
 html,
 body {
 	height: 100%;
+	max-width: 100vw;
 }
 
 body {
@@ -285,8 +286,6 @@ h2 {
 	margin: auto;
 
 	iframe {
-		// width: 565px;
-		// height: 457px;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -301,6 +300,7 @@ h2 {
 	position: relative;
 	height: 457px;
 	margin: auto;
+	padding-bottom: 20px;
 }
 
 .owl-carousel {
@@ -322,12 +322,15 @@ h2 {
 
 	.owl-nav button.owl-next,
 	.owl-nav button.owl-prev {
+		display: flex;
+		justify-content: center;
 		position: absolute;
 		top: 50%;
 		width: 35px;
 		height: 35px;
 		border-radius: 50%;
-		border: 1px solid #000;
+		border: 1px solid #dadada;
+		color: #dadada;
 		font-size: 30px;
 	}
 
@@ -342,7 +345,7 @@ h2 {
 
 .owl-theme .owl-nav [class*=owl-]:hover {
 	background: transparent;
-	color: #49c7de;
-	border: 1px solid #49c7de;
+	color: #000;
+	border: 1px solid #000;
 }
 

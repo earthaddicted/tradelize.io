@@ -8,7 +8,6 @@ footer {
 	background-repeat: no-repeat;
 	position: relative;
 	max-width: 100%;
-	// overflow-x: hidden;
 
 	.block-wrapper__top {
 		display: flex;
@@ -18,7 +17,6 @@ footer {
 		max-width: 1240px;
 		margin: auto;
 		padding: 40px 20px;
-		// border-bottom: 1px solid rgba(231, 231, 231, 0.12);
 
 		&::after {
 			content: ' ';

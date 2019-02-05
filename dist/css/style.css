@@ -102,7 +102,8 @@ a {
 /* sticky footer */
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  max-width: 100vw; }
 
 body {
   display: -webkit-box;
@@ -268,7 +269,8 @@ h2 {
           align-items: center;
   position: relative;
   height: 457px;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 20px; }
 
 .owl-carousel {
   display: block !important; }
@@ -282,13 +284,22 @@ h2 {
     display: none; }
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: absolute;
     top: 50%;
     width: 35px;
     height: 35px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    border: 1px solid #000;
+    border: 1px solid #dadada;
+    color: #dadada;
     font-size: 30px; }
   .owl-carousel .owl-nav button.owl-prev {
     left: -50px; }
@@ -297,8 +308,8 @@ h2 {
 
 .owl-theme .owl-nav [class*=owl-]:hover {
   background: transparent;
-  color: #49c7de;
-  border: 1px solid #49c7de; }
+  color: #000;
+  border: 1px solid #000; }
 
 /* ============= HEADER ============= */
 header {
@@ -400,6 +411,7 @@ header {
 .lang {
   display: none;
   position: absolute;
+  left: 13px;
   background: #fff;
   margin: 17px 0;
   padding: 6px 13px;
@@ -893,24 +905,31 @@ p {
 .modal-dialog {
   max-width: 1300px;
   width: 95%; }
-  .modal-dialog .modal-header {
-    border-bottom: 0;
-    color: #000;
-    font-family: 'GothamPro Bold';
-    font-size: 33px;
-    font-weight: 700;
-    line-height: 23px;
-    text-align: center; }
-    .modal-dialog .modal-header .close {
-      margin: 0rem -1rem -1rem auto !important; }
-    .modal-dialog .modal-header h4 {
-      text-align: center;
-      width: 100%; }
   .modal-dialog .modal-content {
     width: 100%;
     margin: auto;
     text-align: center;
     padding: 30px 40px; }
+
+.modal-header {
+  border-bottom: 0;
+  color: #000;
+  font-family: 'GothamPro Bold';
+  font-size: 33px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: center; }
+  .modal-header .close {
+    margin: 0rem -1rem -1rem auto !important; }
+  .modal-header h4 {
+    text-align: center;
+    width: 100%;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 23px; }
+
+.modal-blody .block-wrapper__inner {
+  margin-bottom: 40px; }
 
 /* ============= PRODUCT SECTION popup  ============= */
 .block-multiple__features {
@@ -920,8 +939,11 @@ p {
   padding: 0; }
   .block-multiple__features .block-multiple__item {
     width: 24%;
-    margin: 30px 0;
-    padding: 10px 15px; }
+    margin: 30px auto;
+    padding: 10px 15px;
+    text-align: center; }
+    .block-multiple__features .block-multiple__item img {
+      margin: auto; }
   .block-multiple__features .block-multiple__title {
     padding: 18px 0;
     font-size: 18px;
@@ -938,6 +960,10 @@ p {
   height: 100%;
   background-color: blue;
   display: block; }
+
+.fa-arrow-left,
+.fa-arrow-right {
+  font-size: 16px; }
 
 .slider-item {
   display: block;
@@ -1223,11 +1249,18 @@ p {
     margin-top: 15px; }
   .carousel-item__video {
     width: 297px;
-    height: 318px; }
+    height: 318px;
+    padding-bottom: 20px; }
   .modal-dialog .modal-content {
     padding: 20px 0; }
-  .modal-body .block-wrapper__inner {
-    padding: 0 0 30px; }
+  .modal-header h4 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal; }
+  .modal-body {
+    margin-bottom: 20px; }
+    .modal-body .block-wrapper__inner {
+      padding: 0 0 30px; }
   .block-multiple {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1336,16 +1369,22 @@ p {
         height: 30px; }
   .menu-block {
     display: none; }
+  .slider-item__title {
+    font-size: 18px;
+    line-height: 23px; }
+  .owl-carousel .owl-stage-outer {
+    position: relative; }
   .owl-carousel .owl-nav button.owl-next,
   .owl-carousel .owl-nav button.owl-prev {
     top: 100%; }
   .owl-carousel .owl-nav button.owl-prev {
-    left: 35%;
-    -webkit-transform: translateX(-35%);
-        -ms-transform: translateX(-35%);
-            transform: translateX(-35%); }
+    left: unset;
+    right: 40px;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0); }
   .owl-carousel .owl-nav button.owl-next {
-    right: 35%;
+    right: 10px;
     -webkit-transform: translateX(35%);
         -ms-transform: translateX(35%);
             transform: translateX(35%); }

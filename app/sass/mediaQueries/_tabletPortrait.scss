@@ -383,14 +383,23 @@
 
 	.carousel-item__video {
 		width: 297px;
-		height: 318px
+		height: 318px;
+		padding-bottom: 20px;
 	}
 
 	.modal-dialog .modal-content {
 		padding: 20px 0;
 	}
 
+	.modal-header h4 {
+		font-size: 26px;
+		font-weight: 700;
+		line-height: normal;
+	}
+
 	.modal-body {
+		margin-bottom: 20px;
+
 		.block-wrapper__inner {
 			padding: 0 0 30px;
 		}
@@ -542,18 +551,29 @@
 	}
 
 	//slider
+	.slider-item__title {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.owl-carousel .owl-stage-outer {
+		position: relative;
+	}
+
 	.owl-carousel .owl-nav button.owl-next,
 	.owl-carousel .owl-nav button.owl-prev {
 		top: 100%;
 	}
 
 	.owl-carousel .owl-nav button.owl-prev {
-		left: 35%;
-		transform: translateX(-35%)
+		// left: 35%;
+		left: unset;
+		right: 40px;
+		transform: translateX(0)
 	}
 
 	.owl-carousel .owl-nav button.owl-next {
-		right: 35%;
+		right: 10px;
 		transform: translateX(35%)
 	}
 

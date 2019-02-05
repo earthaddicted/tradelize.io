@@ -40,7 +40,6 @@ header {
 .logo {
 	max-width: 156px;
 	min-width: 100px;
-	// width: 100%;
 
 	img {
 		width: 100%;
@@ -103,6 +102,7 @@ header {
 .lang {
 	display: none;
 	position: absolute;
+	left: 13px;
 	background: #fff;
 	margin: 17px 0;
 	padding: 6px 13px;
