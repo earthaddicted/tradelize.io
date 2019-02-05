@@ -1,0 +1,67 @@
+
+/* CONTACT US */
+
+.modal-contacts {
+
+	.modal-content {
+		padding: 20px 120px;
+	}
+
+	.modal-content {
+		background-image: url('../images/img/circle-single.png');
+		background-repeat: no-repeat;
+		background-size: 400px;
+		background-position: -168px -192px;
+	}
+
+	.modal-header {
+		align-items: center;
+
+		.close {
+			margin: 0rem -1rem 0 auto !important;
+		}
+	}
+
+	.form-wrapper {
+		max-width: 333px;
+		width: 100%;
+		margin: auto;
+	}
+
+	.form-group {
+		margin: 22px 0;
+	}
+
+	.form-control {
+		border-radius: 4px;
+		border: 1px solid #e4e4e4;
+		color: #101627;
+		// font-family: "Gotham Pro";
+		font-size: 15px;
+		letter-spacing: -0.24px;
+		line-height: 20px;
+
+		&:placeholder {
+			color: #c9c9c9;
+		}
+	}
+
+	textarea {
+		resize: none;
+		height: 138px;
+	}
+
+	.form-submit {
+		width: 100%;
+	}
+}
+
+/* CONTACT US END */
+
+
+
+/* REGISTER */
+
+
+
+/* REGISTER END */

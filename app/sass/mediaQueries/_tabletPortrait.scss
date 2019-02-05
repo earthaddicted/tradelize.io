@@ -91,40 +91,12 @@
 					&::before {
 						border-top-color: #000;
 					}
-
-					// &.open {
-					// 	&::before {
-					// 		content: '';
-					// 		// transform-origin: center;
-					// 		transform: rotate(180deg);
-					// 		position: absolute;
-					// 		top: 3px;
-					// 		right: -10px;
-					// 		content: '';
-					// 		width: 0;
-					// 		height: 0;
-					// 		border-left: 6px solid transparent;
-					// 		border-right: 6px solid transparent;
-					// 		border-top: 9px solid #000;
-
-					// 	}
-					// }
 				}
-
-
 
 				&__item-selected {
 					color: #000;
 				}
-
-				// .lang-block.open {
-				// 	&::before {
-				// 			content: '';
-				// 			// transform-origin: center;
-				// 			transform: rotate(180deg);
-				// 		}
-				// 	}
-				}
+			}
 
 			.menu-hamburger {
 				margin: 0 auto;
@@ -355,9 +327,7 @@
 		z-index: 101;
 		opacity: 1 !important;
 	}
-
 	/* mob menu hamburger END*/
-
 	//header END
 
 	.section {
@@ -421,7 +391,6 @@
 	}
 
 	//top section
-
 	.top-section p {
 		font-size: 14px;
 		font-weight: 500;
@@ -566,7 +535,6 @@
 	}
 
 	.owl-carousel .owl-nav button.owl-prev {
-		// left: 35%;
 		left: unset;
 		right: 40px;
 		transform: translateX(0)
@@ -584,6 +552,32 @@
 	.block-multiple__features {
 		.block-multiple__item {
 			width: 255px;
+		}
+	}
+
+	// contacts
+	.modal-contacts {
+		.modal-content {
+			padding: 20px 120px;
+		}
+	}
+
+	.email-block {
+			margin: 37px 0;
+			background-color: transparent;
+
+		.form-group {
+			background-color: transparent;
+		}
+
+		.form-control {
+			display: none;
+		}
+	}
+
+	.trading {
+		.form-group {
+			justify-content: center;
 		}
 	}
 }

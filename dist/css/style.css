@@ -992,6 +992,53 @@ p {
     line-height: 25px; }
 
 /* ============= PRODUCT SECTION popup END  ============= */
+/* CONTACT US */
+.modal-contacts .modal-content {
+  padding: 20px 120px; }
+
+.modal-contacts .modal-content {
+  background-image: url("../images/img/circle-single.png");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position: -168px -192px; }
+
+.modal-contacts .modal-header {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .modal-contacts .modal-header .close {
+    margin: 0rem -1rem 0 auto !important; }
+
+.modal-contacts .form-wrapper {
+  max-width: 333px;
+  width: 100%;
+  margin: auto; }
+
+.modal-contacts .form-group {
+  margin: 22px 0; }
+
+.modal-contacts .form-control {
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  border: 1px solid #e4e4e4;
+  color: #101627;
+  font-size: 15px;
+  letter-spacing: -0.24px;
+  line-height: 20px; }
+  .modal-contacts .form-control:placeholder {
+    color: #c9c9c9; }
+
+.modal-contacts textarea {
+  resize: none;
+  height: 138px; }
+
+.modal-contacts .form-submit {
+  width: 100%; }
+
+/* CONTACT US END */
+/* REGISTER */
+/* REGISTER END */
 @media only screen and (max-width: 1023px) {
   header {
     padding: 0; }
@@ -1398,7 +1445,21 @@ p {
   .product-block__img {
     background: none; }
   .block-multiple__features .block-multiple__item {
-    width: 255px; } }
+    width: 255px; }
+  .modal-contacts .modal-content {
+    padding: 20px 120px; }
+  .email-block {
+    margin: 37px 0;
+    background-color: transparent; }
+    .email-block .form-group {
+      background-color: transparent; }
+    .email-block .form-control {
+      display: none; }
+  .trading .form-group {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media only screen and (min-width: 1024px) {
   .menu-block {
@@ -1406,4 +1467,8 @@ p {
 
 @media only screen and (max-width: 600px) {
   .carousel-item__video {
-    width: 100%; } }
+    width: 100%; }
+  .modal-contacts .modal-content {
+    padding: 20px 0; }
+  .modal-header .close {
+    padding: 0rem 1rem; } }
