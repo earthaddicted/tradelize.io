@@ -1,0 +1,148 @@
+
+/* ============= FOOTER  ============= */
+
+footer {
+	background-image: url('../images/img/footer-bg.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	max-width: 100%;
+	// overflow-x: hidden;
+
+	.block-wrapper__top {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		width: 100%;
+		max-width: 1240px;
+		margin: auto;
+		padding: 40px 20px;
+		// border-bottom: 1px solid rgba(231, 231, 231, 0.12);
+
+		&::after {
+			content: ' ';
+			display: block;
+			position: absolute;
+			left: -50%;
+			bottom: 0;
+			height: 1px;
+			width: 400%;
+			background: rgba(231, 231, 231, 0.32);
+		}
+
+		ul {
+			display: flex;
+
+			a {
+				font-family: 'GothamPro Light';
+				color: #fff;
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: 1px;
+				margin-left: 20px;
+
+				&:hover {
+					color: #4cd4d7;
+				}
+			}
+		}
+
+		.logo {
+			margin-right: 20px;
+		}
+	}
+
+	.block-wrapper__middle {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1240px;
+		margin: auto;
+		padding: 40px 20px;
+
+		.right-side {
+			align-items: flex-start;
+		}
+	}
+
+	.menu-container {
+		margin-left: 37px;
+	}
+
+	.menu-block {
+		margin-top: 40px;
+
+		&__title {
+			color: #fff;
+			font-family: 'GothamPro Light';
+			font-size: 13px;
+			font-weight: 400;
+			letter-spacing: 0.81px;
+			line-height: 25px;
+		}
+	}
+
+	.menu-item__ancor {
+		color: #fff;
+		font-family: 'GothamPro Light';
+		font-size: 13px;
+		font-weight: 400;
+		letter-spacing: 0.81px;
+		line-height: 25px;
+
+		&:hover {
+			color: #50E4D0;
+		}
+	}
+}
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	max-width: 280px;
+	width: 100%;
+
+	p {
+		font-family: 'GothamPro Light';
+		font-size: 9px;
+		font-weight: 400;
+		letter-spacing: 0.56px;
+		line-height: 16px;
+		color: #fff;
+	}
+}
+
+.social-block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	&__item {
+		width: 20px;
+		margin: 20px 20px 0 0;
+
+		img {
+			max-width: 100%;
+		}
+
+		svg {
+			use {
+				fill: #fff;
+				transition: .2s ease-in-out;
+			}
+		}
+
+		&:hover {
+			svg use {
+				fill: #50e4d0;
+			}
+		}
+	}
+}
+/* ============= FOOTER END ============= */
+
+
+

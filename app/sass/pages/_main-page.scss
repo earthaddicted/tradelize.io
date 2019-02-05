@@ -1,0 +1,417 @@
+/* ============= TOP SECTION ============= */
+.top-section {
+	background: url('../images/img/main-bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+
+	h1 {
+		max-width: 780px;
+	}
+
+	p {
+		max-width: 620px;
+		margin: 20px 0;
+		color: #fff;
+		font-family: 'GothamPro Medium';
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 29px;
+	}
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+	background-color: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+	background-color: transparent;
+}
+
+/* ============= TOP SECTION END ============= */
+
+.email-block {
+	max-width: 597px;
+	width: 100%;
+	margin: 60px 0;
+	background: #fff;
+	padding: 3px;
+	border-radius: 4px;
+
+	.form-control {
+		border: 1px solid transparent;
+		outline: none;
+
+		&::placeholder {
+			color: #cad6fb;
+			font-family: 'GothamPro Light';
+			font-size: 20px;
+			letter-spacing: 0.83px;
+		}
+
+		&:focus,
+		&:active {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+}
+
+.email-block.text-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.form-submit {
+	white-space: nowrap;
+}
+
+.block-scroll {
+	width: 100%;
+	padding: 0;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	scroll-behavior: smooth;
+}
+
+.small-block {
+	display: flex;
+
+	&__item {
+		width: 167px;
+		// margin: 0 10px;
+		margin: 0 -2px 0 10px;
+		padding: 18px 15px;
+		border-radius: 4px;
+		background-color: rgba(1, 6, 22, 0.77);
+	}
+
+	&__title {
+		display: block;
+		font-size: 14px;
+		font-weight: 300;
+		font-family: 'GothamPro Light';
+		letter-spacing: 0.58px;
+		text-transform: uppercase;
+		margin-bottom: 7px;
+	}
+
+	&__data {
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.58px;
+		font-family: 'GothamPro Light';
+
+		&:last-of-type {
+			margin-left: 7px;
+		}
+
+		&-plus {
+			color: #00ff46;
+		}
+
+		&-minus {
+			color: #ff0000;
+		}
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+/* ============= MULTIPLE SECTION ============= */
+
+.block-multiple {
+	display: flex;
+	padding: 50px 0;
+
+
+	&__item {
+		width: 33.3%;
+		margin: 20px 0;
+		text-align: center;
+		padding: 20px 40px;
+
+		&:not(:first-of-type) {
+			border-left: 1px solid #ededed;
+		}
+	}
+
+	&__title {
+		padding: 32px 0;
+		color: #2a2a2a;
+		font-family: 'GothamPro Bold';
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 28px;
+	}
+
+	&__text {
+		color: #6c6c6c;
+		font-size: 15px;
+		line-height: 26px;
+	}
+}
+
+.border-top {
+	border-top: 1px solid #f2f2f2;
+}
+
+.text-center {
+	text-align: center;
+}
+
+p {
+	font-family: 'GothamPro Medium';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+.block-wrapper__inner {
+	padding: 50px 0;
+}
+
+.special-text {
+	// padding: 20px 0;
+	font-family: 'GothamPro Bold';
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.83px;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+
+.special-section {
+	padding-bottom: 70px;
+}
+
+/* ============= MULTIPLE SECTION END ============= */
+
+.trading {
+	background: url('../images/img/bg-trade.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.question {
+	background: url('../images/img/bg-last.jpg') 50% 50% no-repeat;
+	background-size: cover;
+}
+
+/* ============= PRODUCT SECTION  ============= */
+.block-wrapper-no-padding {
+	padding: 20px 0;
+	max-width: 1440px;
+}
+
+.product-block {
+	display: flex;
+	// justify-content: space-between;
+
+	&:first-of-type {
+		padding-top: 120px;
+	}
+
+	&:first-of-type {
+		margin-top: 20px;
+		padding-top: 20px;
+		justify-content: flex-start;
+	}
+
+	&:nth-of-type(2) {
+		justify-content: flex-end;
+	}
+
+	&:nth-of-type(3) {
+		justify-content: center;
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+
+		img {
+			height: 34px;
+			margin-right: 20px;
+		}
+	}
+
+	&__content {
+		padding-top: 40px;
+		width: 50%;
+		padding: 7% 40px 20px;
+
+		h3 {
+			color: #000;
+			font-family: 'GothamPro Bold';
+			font-size: 24px;
+			font-weight: 700;
+		}
+
+		p {
+			padding: 37px 0;
+		}
+	}
+
+	&__img {
+		width: 50%;
+		background: url('../images/img/circle-single.png') no-repeat 50% 50%;
+		background-size: contain;
+		padding: 40px 0;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}
+
+.app-block {
+	display: flex;
+	align-items: center;
+	color: #4cd4d7;
+	font-family: 'GothamPro Bold';
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0.58px;
+	line-height: 20px;
+	text-transform: uppercase;
+
+	&__item {
+		display: flex;
+	}
+
+	&__btn {
+		display: block;
+		margin: 0 10px;
+		opacity: 0.5;
+	}
+}
+
+.popup-btns {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.btn-line {
+	display: flex;
+	align-items: center;
+	margin: 40px 40px 20px 0;
+	background: transparent;
+	color: #4cd4d7;
+	font-family: 'GothamPro Bold';
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	border-bottom: 2px solid #4cd4d7;
+	white-space: nowrap;
+
+	img {
+		width: 20px;
+		margin: 0 10px;
+	}
+}
+
+.modal-dialog {
+	max-width: 1300px;
+	width: 95%;
+
+	.modal-header {
+		border-bottom: 0;
+		color: #000;
+		font-family: 'GothamPro Bold';
+		font-size: 33px;
+		font-weight: 700;
+		line-height: 23px;
+		text-align: center;
+
+		.close {
+			margin: 0rem -1rem -1rem auto !important;
+		}
+
+		h4 {
+			text-align: center;
+			width: 100%;
+		}
+	}
+
+	.modal-content {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		padding: 30px 40px;
+	}
+}
+
+/* ============= PRODUCT SECTION popup  ============= */
+
+.block-multiple__features {
+	flex-wrap: wrap;
+	padding: 0;
+
+	.block-multiple {
+		&__item {
+			width: 24%;
+			margin: 30px 0;
+			padding: 10px 15px;
+		}
+
+		&__title {
+			padding: 18px 0;
+			font-size: 18px;
+			line-height: 26px;
+		}
+
+		&__text {
+			color: #6c6c6c;
+			font-family: 'GothamPro Light';
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+
+	.block-multiple__item:not(:first-of-type) {
+		border-left: none;
+	}
+}
+
+.slider-item__video {
+	height: 100%;
+	background-color: blue;
+	display: block;
+}
+
+.slider-item {
+	display: block;
+	margin: 0 auto;
+	max-width: 565px;
+
+	&__title {
+		color: #000;
+		font-family: 'GothamPro Bold';
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 23px;
+		text-align: left;
+	}
+
+	&__date {
+		margin: 12px 0;
+		text-align: left;
+		color: #737373;
+		font-family: 'GothamPro Light';
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+
+/* ============= PRODUCT SECTION popup END  ============= */
