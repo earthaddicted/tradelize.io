@@ -61,7 +61,7 @@ if ($(window).width() < 968) {
 	}
 
   postsCarousel();
-  $(window).resize(postsCarousel);	
+  $(window).resize(postsCarousel);
 
 /* ===== HEADER ====== */
 $(function() {
