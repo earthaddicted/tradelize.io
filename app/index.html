@@ -81,7 +81,9 @@
                 <div class="email-block">
                     <div class="form-group">
                         <input class="form-control" type="email" placeholder="Email…">
-                        <button class="btn-border form-submit" type="submit">Register Now</button>
+                        <!-- <button class="btn-border form-submit" type="submit">Register Now</button> -->
+
+                        <button class="btn-border btn-email form-submit"  data-toggle="modal" data-target="#registration" type="submit">Register Now</button>
                     </div>
                 </div>
                 <div class="block-scroll row">
@@ -292,7 +294,9 @@
                 <div class="email-block text-center">
                     <div class="form-group">
                         <input class="form-control" type="email" placeholder="Email…">
-                        <button class="btn-border form-submit" type="submit">Register Now</button>
+                        <!-- <button class="btn-border form-submit" type="submit">Register Now</button> -->
+
+                        <button class="btn-border btn-email form-submit"  data-toggle="modal" data-target="#registration" type="submit">Register Now</button>
                     </div>
                 </div>
             </div>
@@ -616,6 +620,37 @@
             </div>
         </div>
         <!-- popup features END -->
+
+        <!-- popup new registration -->
+        <div class="modal modal-email hide" id="registration">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">For trading groups and communities</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <img src="images/svg/close.svg" alt="close">
+                        </button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="block-wrapper__inner">
+                            <form method="" action="">
+                                <div class="form-wrapper__small">
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="Email address" />
+                                    </div>
+                                </div>
+                                <button class="btn-border form-submit" type="submit">Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup new registration END -->
+
+
     </main>
     <footer>
         <div class="block-wrapper__top">

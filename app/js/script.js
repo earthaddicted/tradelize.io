@@ -23,7 +23,7 @@ $('.carousel-video').owlCarousel({
 })
 
 // $(window).on('resize',function(){
-if ($(window).width() < 968) {
+if ($(window).width() < 1024) {
 	$('footer .menu-container').on('click', function(e){
 		$(this).find('.menu-block').toggleClass('open');
 		console.log('clicked');
@@ -103,3 +103,40 @@ $('.lang-block').on('click', function(e){
 	$('.lang-block').toggleClass('open');
 })
 /* ===== LANG END ====== */
+
+
+/* ===== registration popup ====== */
+
+$('.btn-email').on('shown.bs.modal', function () {
+    var width = $(window).width();
+    if(width > 1023){
+        $(this).hide();
+    }
+});
+
+(function() {
+    function toggleSlick() {
+        if ($(window).width() > 1023) {
+        	$('#registration').removeAttr('id');
+        }
+
+        else if ($(window).width() < 1024) {
+        	$('#registration #mail').attr('id', 'registration');
+        }
+    }
+
+    toggleSlick();
+
+    $(window).on('load', function() {
+        toggleSlick();
+    });
+
+    $(window).on('resize', function() {
+        toggleSlick();
+    });
+
+})();
+
+
+/* ===== registration popup END ====== */
+

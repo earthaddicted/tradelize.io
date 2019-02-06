@@ -1254,6 +1254,31 @@ input[type="checkbox"] {
   padding: 0 1rem; }
 
 /* successful END */
+/* modal email */
+.modal-email .modal-body {
+  margin: auto;
+  max-width: 333px;
+  width: 100%; }
+
+.modal-email .modal-header {
+  margin: auto; }
+
+.modal-email .modal-title {
+  font-size: 26px;
+  line-height: 36px;
+  max-width: 300px;
+  margin: auto;
+  text-align: center; }
+
+.modal-email .btn-border {
+  width: 100%; }
+
+.modal-email .close {
+  position: absolute;
+  top: 20px;
+  right: 40px; }
+
+/* modal email END */
 @media only screen and (max-width: 1023px) {
   header {
     padding: 0; }
@@ -1693,4 +1718,6 @@ input[type="checkbox"] {
   .modal-contacts .modal-content {
     padding: 20px 0; }
   .modal-header .close {
-    padding: 0rem 1rem; } }
+    padding: 0rem 1rem; }
+  .modal-email .close {
+    top: 12px; } }

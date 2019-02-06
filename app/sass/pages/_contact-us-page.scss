@@ -246,4 +246,39 @@ input[type="checkbox"] {
 		padding: 0 1rem;
 	}
 }
+
 /* successful END */
+
+/* modal email */
+.modal-email {
+	.modal-body {
+		margin: auto;
+		max-width: 333px;
+		width: 100%;
+	}
+
+	.modal-header {
+		margin: auto;
+	}
+
+	.modal-title {
+		font-size: 26px;
+		line-height: 36px;
+		max-width: 300px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.btn-border {
+		width: 100%;
+	}
+
+	.close {
+		position: absolute;
+		top: 20px;
+		right: 40px;
+	}
+
+}
+/* modal email END */
+
