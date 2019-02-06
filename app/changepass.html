@@ -14,7 +14,7 @@
 	<link rel="icon" type="image/png" href="images/img/favicon.png">
 </head>
 
-<body class="page-login">
+<body class="page-reset">
 	<header>
 		<div class="block-wrapper">
 			<a href="index.html" class="logo">
@@ -24,50 +24,39 @@
 				<button class="btn-simple active">
 					Sign In
 				</button>
-			</div>
 
+				<a href="signup.html" class="btn-simple active">Sign Up</a>
+			</div>
 		</div>
 	</header>
 	<main>
-		<section class="section login">
+		<section class="section signin">
 			<div class="block-wrapper">
-				<h1>Sign Up</h1>
+				<h1>Change password</h1>
 				<!-- row with product -->
 				<div class="block-wrapper__inner">
 					<form method="" action="">
 						<div class="form-wrapper__small">
 							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Name" />
+								<input class="form-control" type="password" placeholder="New password" />
 							</div>
 
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Nick name" />
-							</div>
-
-							<div class="form-group">
-								<input class="form-control" type="email" placeholder="Email" />
-							</div>
-
-							<div class="form-group">
+							<div class="form-group flex-column">
 								<input class="form-control" type="password" placeholder="Password" />
+								<!-- <a href="" class="text-input__small">
+									Password doesn't match
+								</a> -->
+
+								<div class="text-input__small">
+									Password doesn't match
+								</div>
 							</div>
 
-							<label class="checkbox-block-wrapper input-icon">
-								<input type="checkbox" id="agree" value="1">
-								<div class="checkbox-block-wrapper-text">
-									I accept the Tradelize Terms and Сonditions
-								</div>
-							</label>
+							<button class="form-submit btn-border" type="submit">Save</button>
 
-							<button class="btn-border form-submit" type="submit">Sign Up</button>
-
-							<!-- <button class="btn-fb form-submit" type="submit">
-								<i class="fa fa-facebook-f"></i> Sign Up with Facebook
-							</button> -->
-
-							<a href="" class="btn-fb form-submit">
-								<i class="fa fa-facebook-f"></i> Sign Up with Facebook
-							</a>
+							<!-- <a href="signin.html" class="form-submit btn-border">
+								Save
+							</a> -->
 
 						</div>
 					</form>

@@ -94,6 +94,13 @@ $light: #e3e3e3; //footer ancors
 	padding: 20px 20px;
 }
 
+.block-wrapper__inner-small {
+	max-width: 745px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
 .content-wrapper {
 	@include flex-container;
 }
@@ -159,7 +166,6 @@ main {
 
 		&::after {
 			content: '';
-			// position: absolute;
 			display: block;
 			margin: auto;
 			margin-top: 40px;
@@ -200,6 +206,31 @@ button,
 	}
 }
 
+.btn-fb {
+	display: block;
+	margin: 25px 0;
+	padding: 12px 26px;
+	color: #47bee2;
+	font-family: 'GothamPro Bold';
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: -0.26px;
+	line-height: 20px;
+	border: 2px solid #47bee2;
+	border-radius: 4px;
+	background: transparent;
+	box-shadow: 0 0 11px 0 rgba(97, 226, 227, 0);
+
+	i {
+		margin: 0 8px;
+	}
+
+	&:hover {
+		color: #47bee2;
+		box-shadow: 0 0 11px 0 rgba(97, 226, 227, 0.73);
+	}
+}
+
 .btn-white {
 	padding: 18px 80px;
 	color: #0c1721;
@@ -221,8 +252,85 @@ button,
 	}
 }
 
+.btn-simple {
+	margin: 10px;
+	white-space: nowrap;
+	font-family: 'GothamPro Regular';
+	color: #50E4D0;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: center;
+	background:transparent;
+	border: none;
+	text-shadow: 0 2px 4px 0 rgba(0,0,0,0.1), 0 2px 4px 0 rgba(0,0,0,0.5);
+	border-radius: 4px;
+	padding: 12px 26px;
+
+	&:hover,
+	&.active {
+		color: #fff;
+		background: linear-gradient(134.72deg, #51E8CE 0%, #46BBE3 100%);
+		// box-shadow: 0 0 11px 0 rgba(0,0,0,0.63);
+	}
+}
+
+.btn-border {
+	white-space: nowrap;
+	font-family: 'GothamPro Regular';
+	color: #fff !important;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: center;
+	background:transparent;
+	border: none;
+	//text-shadow: 0 2px 4px 0 rgba(0,0,0,0.1), 0 2px 4px 0 rgba(0,0,0,0.5);
+	border-radius: 4px;
+	padding: 12px 26px;
+	background: linear-gradient(134.72deg, #51E8CE 0%, #46BBE3 100%);
+	box-shadow: 0 0 11px 0 rgba(97,226,227,0.63);
+
+	&:hover,
+	&.active {
+		color: #fff;
+		box-shadow: none;
+	}
+}
+
+.btn-round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	position: absolute;
+	top: 25px;
+	width: 35px;
+	height: 35px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+
+	svg {
+
+		path {
+			fill: #000;
+			transition: .3s ease-in-out;
+		}
+	}
+
+	&:hover {
+		border: 1px solid #50e4d0;
+
+		svg {
+			path {
+				fill: #50e4d0;
+			}
+		}
+	}
+}
+
 h1 {
-	// color: #fff;
 	font-family: 'GothamPro Bold';
 	font-size: 48px;
 	font-weight: 700;

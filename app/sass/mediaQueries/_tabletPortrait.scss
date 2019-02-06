@@ -580,6 +580,19 @@
 			justify-content: center;
 		}
 	}
+
+	.signup {
+		background-image: none;
+	}
+
+	.signin {
+		background-image: none;
+	}
+
+	.btn-round {
+		display: none;
+		top: 67px;
+	}
 }
 
 @media only screen and (min-width: 1024px) {

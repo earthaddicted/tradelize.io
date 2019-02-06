@@ -14,60 +14,47 @@
 	<link rel="icon" type="image/png" href="images/img/favicon.png">
 </head>
 
-<body class="page-login">
+<body class="page-reset">
 	<header>
 		<div class="block-wrapper">
 			<a href="index.html" class="logo">
 				<img src="images/svg/logo-dark.svg" alt="logo">
 			</a>
-			<div class="settings-block">
+			<!-- <div class="settings-block">
 				<button class="btn-simple active">
 					Sign In
 				</button>
-			</div>
+				<a href="signin.html" class="btn-simple active">Sign In</a>
+			</div> -->
 
 		</div>
 	</header>
 	<main>
-		<section class="section login">
+		<section class="section signup">
 			<div class="block-wrapper">
-				<h1>Sign Up</h1>
+				<h1>Password reset</h1>
 				<!-- row with product -->
+				<!-- btn back to reset -->
+				<a href="signin.html" class="btn-round">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="9" viewBox="0 0 10 9"><defs><path id="jkgya" d="M145.438 117.65l.016.004h-6.692l2.104-2.284a.62.62 0 0 0 .159-.422.618.618 0 0 0-.16-.42l-.327-.355a.522.522 0 0 0-.386-.173.522.522 0 0 0-.387.173l-3.606 3.907a.613.613 0 0 0-.159.42c0 .159.056.308.16.42l3.605 3.907a.522.522 0 0 0 .773 0l.328-.355a.613.613 0 0 0 .159-.418c0-.159-.056-.3-.16-.411l-2.127-2.297h6.707c.302 0 .555-.282.555-.608v-.502a.578.578 0 0 0-.562-.586z"/></defs><g><g transform="translate(-136 -114)"><use xlink:href="#jkgya"/></g></g></svg>
+				</a>
+				
+				<!-- <button class="btn-round">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="9" viewBox="0 0 10 9"><defs><path id="jkgya" d="M145.438 117.65l.016.004h-6.692l2.104-2.284a.62.62 0 0 0 .159-.422.618.618 0 0 0-.16-.42l-.327-.355a.522.522 0 0 0-.386-.173.522.522 0 0 0-.387.173l-3.606 3.907a.613.613 0 0 0-.159.42c0 .159.056.308.16.42l3.605 3.907a.522.522 0 0 0 .773 0l.328-.355a.613.613 0 0 0 .159-.418c0-.159-.056-.3-.16-.411l-2.127-2.297h6.707c.302 0 .555-.282.555-.608v-.502a.578.578 0 0 0-.562-.586z"/></defs><g><g transform="translate(-136 -114)"><use xlink:href="#jkgya"/></g></g></svg>
+				</button> -->
+				<!-- btn back to reset END -->
+
 				<div class="block-wrapper__inner">
 					<form method="" action="">
+						<p class="form-info">To reset your password, enter your email address</p>
 						<div class="form-wrapper__small">
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Name" />
-							</div>
-
-							<div class="form-group">
-								<input class="form-control" type="text" placeholder="Nick name" />
-							</div>
-
 							<div class="form-group">
 								<input class="form-control" type="email" placeholder="Email" />
 							</div>
 
-							<div class="form-group">
-								<input class="form-control" type="password" placeholder="Password" />
-							</div>
+							<!-- <button class="btn-border form-submit" type="submit">Send</button> -->
 
-							<label class="checkbox-block-wrapper input-icon">
-								<input type="checkbox" id="agree" value="1">
-								<div class="checkbox-block-wrapper-text">
-									I accept the Tradelize Terms and Сonditions
-								</div>
-							</label>
-
-							<button class="btn-border form-submit" type="submit">Sign Up</button>
-
-							<!-- <button class="btn-fb form-submit" type="submit">
-								<i class="fa fa-facebook-f"></i> Sign Up with Facebook
-							</button> -->
-
-							<a href="" class="btn-fb form-submit">
-								<i class="fa fa-facebook-f"></i> Sign Up with Facebook
-							</a>
+							<a href="reset2.html" class="btn-border form-submit">Send</a>
 
 						</div>
 					</form>
