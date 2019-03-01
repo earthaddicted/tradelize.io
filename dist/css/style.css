@@ -46,25 +46,25 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'GothamPro Bold';
+  font-family: 'GothamPro';
   src: url("../fonts/GothaProBol.otf");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GothamPro Medium';
+  font-family: 'GothamPro';
   src: url("../fonts/GothaProMed.otf");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GothamPro Regular';
+  font-family: 'GothamPro';
   src: url("../fonts/GothaProReg.otf");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GothamPro Light';
+  font-family: 'GothamPro';
   src: url("../fonts/GothaProLig.otf");
   font-weight: 300;
   font-style: normal; }
@@ -142,12 +142,14 @@ main {
 
 .light {
   color: #101627; }
-  .light h2 {
+  .light h2,
+  .light .decor-line {
     display: block;
     position: relative;
     color: #101627;
     text-align: center; }
-    .light h2::after {
+    .light h2::after,
+    .light .decor-line::after {
       content: '';
       display: block;
       margin: auto;
@@ -162,7 +164,8 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
-  font-family: 'GothamPro Regular';
+  font-family: 'GothamPro';
+  font-weight: 500;
   outline: transparent; }
   *:focus, *:hover {
     outline: none; }
@@ -185,7 +188,7 @@ button,
   margin: 25px 0;
   padding: 12px 26px;
   color: #47bee2;
-  font-family: 'GothamPro Bold';
+  font-family: 'GothamPro';
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.26px;
@@ -206,7 +209,7 @@ button,
 .btn-white {
   padding: 18px 80px;
   color: #0c1721;
-  font-family: 'GothamPro Bold';
+  font-weight: 700;
   font-size: 15px;
   line-height: normal;
   font-weight: 700;
@@ -229,7 +232,7 @@ button,
 .btn-simple {
   margin: 10px;
   white-space: nowrap;
-  font-family: 'GothamPro Regular';
+  font-weight: 500;
   color: #50E4D0;
   font-size: 16px;
   font-weight: 500;
@@ -247,7 +250,6 @@ button,
 
 .btn-border {
   white-space: nowrap;
-  font-family: 'GothamPro Regular';
   color: #fff !important;
   font-size: 16px;
   font-weight: 500;
@@ -299,14 +301,12 @@ button,
       fill: #50e4d0; }
 
 h1 {
-  font-family: 'GothamPro Bold';
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 59px; }
 
 h2 {
-  font-family: 'GothamPro Bold';
   font-size: 50px;
   font-weight: 700; }
 
@@ -417,7 +417,8 @@ header {
   position: absolute;
   width: 100%;
   margin: auto;
-  z-index: 1; }
+  z-index: 1;
+  font-family: 'GothamPro'; }
   header .block-wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -444,8 +445,8 @@ header {
 .nav__ancor {
   padding: 5px 15px;
   color: #fff;
-  font-family: 'GothamPro Light';
   font-size: 16px;
+  font-weight: 300;
   letter-spacing: 1px;
   line-height: 22px;
   text-align: center;
@@ -499,7 +500,6 @@ header {
   .lang__item {
     text-transform: uppercase;
     color: #919191;
-    font-family: 'GothamPro Regular';
     font-size: 13px;
     font-weight: 500;
     line-height: 25px;
@@ -507,7 +507,6 @@ header {
     text-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
     .lang__item-selected {
       color: #fff;
-      font-family: 'GothamPro Regular';
       font-size: 16px;
       font-weight: 500;
       letter-spacing: 1px;
@@ -528,6 +527,23 @@ header {
       -ms-flex-align: center;
           align-items: center; }
 
+.header-dark .nav__ancor {
+  color: #000; }
+
+.header-dark .logo {
+  background: url("../images/svg/logo-black.svg") no-repeat 50% 50%;
+  background-size: 100%;
+  width: 154px;
+  height: 36px; }
+  .header-dark .logo img {
+    display: none; }
+
+.lang-block::before {
+  border-top: 9px solid #000; }
+
+.lang__item-selected {
+  color: #000; }
+
 /* ============= HEADER END ============= */
 /* ============= FOOTER  ============= */
 footer {
@@ -537,7 +553,8 @@ footer {
   background-repeat: no-repeat;
   position: relative;
   max-width: 100vw;
-  width: 100%; }
+  width: 100%;
+  font-family: 'GothamPro'; }
   footer .block-wrapper__top {
     display: -webkit-box;
     display: -webkit-flex;
@@ -568,7 +585,6 @@ footer {
       display: -ms-flexbox;
       display: flex; }
       footer .block-wrapper__top ul a {
-        font-family: 'GothamPro Light';
         color: #fff;
         font-size: 16px;
         font-weight: 400;
@@ -601,14 +617,12 @@ footer {
     margin-top: 40px; }
     footer .menu-block__title {
       color: #fff;
-      font-family: 'GothamPro Light';
       font-size: 13px;
       font-weight: 400;
       letter-spacing: 0.81px;
       line-height: 25px; }
   footer .menu-item__ancor {
     color: #fff;
-    font-family: 'GothamPro Light';
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.81px;
@@ -633,7 +647,6 @@ footer {
   max-width: 280px;
   width: 100%; }
   .left-side p {
-    font-family: 'GothamPro Light';
     font-size: 9px;
     font-weight: 400;
     letter-spacing: 0.56px;
@@ -671,7 +684,6 @@ footer {
     max-width: 620px;
     margin: 20px 0;
     color: #fff;
-    font-family: 'GothamPro Medium';
     font-size: 16px;
     font-weight: 500;
     line-height: 29px; }
@@ -691,27 +703,29 @@ footer {
   padding: 3px;
   -webkit-border-radius: 4px;
           border-radius: 4px; }
+  .email-block__mob {
+    display: none; }
   .email-block .form-control {
     border: 1px solid transparent;
     outline: none; }
     .email-block .form-control::-webkit-input-placeholder {
       color: #cad6fb;
-      font-family: 'GothamPro Light';
+      font-weight: 300;
       font-size: 20px;
       letter-spacing: 0.83px; }
     .email-block .form-control::-moz-placeholder {
       color: #cad6fb;
-      font-family: 'GothamPro Light';
+      font-weight: 300;
       font-size: 20px;
       letter-spacing: 0.83px; }
     .email-block .form-control:-ms-input-placeholder {
       color: #cad6fb;
-      font-family: 'GothamPro Light';
+      font-weight: 300;
       font-size: 20px;
       letter-spacing: 0.83px; }
     .email-block .form-control::placeholder {
       color: #cad6fb;
-      font-family: 'GothamPro Light';
+      font-weight: 300;
       font-size: 20px;
       letter-spacing: 0.83px; }
     .email-block .form-control:focus, .email-block .form-control:active {
@@ -761,15 +775,13 @@ footer {
     display: block;
     font-size: 14px;
     font-weight: 300;
-    font-family: 'GothamPro Light';
     letter-spacing: 0.58px;
     text-transform: uppercase;
     margin-bottom: 7px; }
   .small-block__data {
     font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.58px;
-    font-family: 'GothamPro Light'; }
+    font-weight: 300;
+    letter-spacing: 0.58px; }
     .small-block__data:last-of-type {
       margin-left: 7px; }
     .small-block__data-plus {
@@ -803,7 +815,6 @@ footer {
   .block-multiple__title {
     padding: 32px 0;
     color: #2a2a2a;
-    font-family: 'GothamPro Bold';
     font-size: 22px;
     font-weight: 700;
     line-height: 28px; }
@@ -819,7 +830,6 @@ footer {
   text-align: center; }
 
 p {
-  font-family: 'GothamPro Medium';
   font-size: 16px;
   font-weight: 500;
   line-height: 34px; }
@@ -828,7 +838,6 @@ p {
   padding: 50px 0; }
 
 .special-text {
-  font-family: 'GothamPro Bold';
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.83px;
@@ -899,7 +908,6 @@ p {
     padding: 7% 40px 20px; }
     .product-block__content h3 {
       color: #000;
-      font-family: 'GothamPro Bold';
       font-size: 24px;
       font-weight: 700; }
     .product-block__content p {
@@ -922,9 +930,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   color: #4cd4d7;
-  font-family: 'GothamPro Bold';
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.58px;
   line-height: 20px;
   text-transform: uppercase; }
@@ -959,7 +966,6 @@ p {
   margin: 40px 40px 20px 0;
   background: transparent;
   color: #4cd4d7;
-  font-family: 'GothamPro Bold';
   font-size: 16px;
   font-weight: 700;
   border: none;
@@ -981,7 +987,6 @@ p {
 .modal-header {
   border-bottom: 0;
   color: #000;
-  font-family: 'GothamPro Bold';
   font-size: 33px;
   font-weight: 700;
   line-height: 23px;
@@ -1017,7 +1022,7 @@ p {
     line-height: 26px; }
   .block-multiple__features .block-multiple__text {
     color: #6c6c6c;
-    font-family: 'GothamPro Light';
+    font-weight: 300;
     font-size: 14px;
     line-height: 20px; }
   .block-multiple__features .block-multiple__item:not(:first-of-type) {
@@ -1038,7 +1043,6 @@ p {
   max-width: 565px; }
   .slider-item__title {
     color: #000;
-    font-family: 'GothamPro Bold';
     font-size: 22px;
     font-weight: 700;
     line-height: 23px;
@@ -1047,11 +1051,164 @@ p {
     margin: 12px 0;
     text-align: left;
     color: #737373;
-    font-family: 'GothamPro Light';
+    font-weight: 300;
     font-size: 16px;
     line-height: 25px; }
 
 /* ============= PRODUCT SECTION popup END  ============= */
+/* 404 page */
+.page-404 .btn-border {
+  padding-right: 170px; }
+
+.error-block {
+  text-align: center; }
+  .error-block .social-block {
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .error-block .social-block__item {
+      margin: 20px 0 20px 20px; }
+      .error-block .social-block__item svg use {
+        fill: #000; }
+  .error-block .row {
+    position: relative;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center; }
+
+.error-word {
+  color: #101627;
+  font-size: 50px; }
+
+.error-msg {
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #6E6E6E !important; }
+
+.error-number {
+  font-size: 260px;
+  font-size: 13.5vw;
+  color: #F0F0F0;
+  font-weight: 300; }
+
+/* 404 page END */
+/* FAQ page */
+.page-faq {
+  padding-bottom: 50px; }
+  .page-faq .block-wrapper__border {
+    margin: 50px 0;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2; }
+  .page-faq .block-wrapper {
+    max-width: 990px;
+    padding: 0 20px; }
+    .page-faq .block-wrapper p {
+      padding: 20px 0;
+      text-align: center;
+      color: #6C6C6C;
+      font-size: 15px; }
+
+.decor-plus {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 41px;
+  height: 41px;
+  border: 2px solid #aeaeae;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin: auto;
+  z-index: -1; }
+  .decor-plus span {
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 1.5px;
+    background-color: #000;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .decor-plus span:first-of-type {
+      top: 18px;
+      left: 13px; }
+    .decor-plus span:nth-of-type(2) {
+      top: 18px;
+      left: 13px;
+      -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+              transform: rotate(90deg); }
+
+.accordion .card {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #F2F2F2 !important; }
+  .accordion .card ol,
+  .accordion .card ul {
+    color: #353535; }
+    .accordion .card ol li,
+    .accordion .card ul li {
+      padding: 10px 0;
+      line-height: normal;
+      font-size: 15px;
+      color: #353535; }
+  .accordion .card p {
+    color: #000; }
+  .accordion .card:first-of-type {
+    border-top: none;
+    border-bottom: 1px solid #F2F2F2; }
+  .accordion .card:last-of-type {
+    border-bottom: 1px solid transparent !important; }
+  .accordion .card-header {
+    padding: .75rem 0;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom: 1px solid transparent; }
+  .accordion .card-body {
+    color: #353535; }
+    .accordion .card-body p {
+      padding: 10px 0;
+      text-align: left; }
+  .accordion .card h5 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    z-index: 2; }
+  .accordion .card .btn-link {
+    width: 100%;
+    padding-right: 50px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: left; }
+    .accordion .card .btn-link.collapsed {
+      font-weight: 500; }
+
+.btn-link ~ .decor-plus {
+  border: 2px solid #000;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out; }
+  .btn-link ~ .decor-plus span:nth-of-type(2) {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+.btn-link.collapsed ~ .decor-plus {
+  border: 2px solid #aeaeae; }
+  .btn-link.collapsed ~ .decor-plus span:nth-of-type(2) {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+/* FAQ page END */
 /* CONTACT US */
 .modal-contacts .modal-content {
   padding: 20px 120px; }
@@ -1129,6 +1286,14 @@ p {
   background-attachment: fixed;
   min-height: 100vh; }
 
+.page-404 {
+  background-image: url("../images/img/circle-single.png"), url("../images/img/circle-single.png");
+  background-repeat: no-repeat;
+  background-size: 400px, 400px;
+  background-position: 87vw 19vh, -17vh 63vh;
+  background-attachment: fixed;
+  min-height: 100vh; }
+
 /* ______ checkbox ______ */
 .checkbox-block-wrapper {
   width: 100%;
@@ -1191,7 +1356,6 @@ input[type="checkbox"] {
   width: 100%;
   padding: 4px 0;
   color: #717171;
-  font-family: 'GothamPro Medium';
   font-size: 14px;
   font-weight: 500;
   line-height: 25px;
@@ -1209,7 +1373,7 @@ input[type="checkbox"] {
 /* RESET */
 .page-reset {
   color: #6c6c6c;
-  font-family: 'GothamPro Light';
+  font-weight: 300;
   font-size: 15px; }
   .page-reset h1 {
     color: #101627;
@@ -1222,13 +1386,12 @@ input[type="checkbox"] {
     padding: 12px 50px; }
   .page-reset a {
     color: #0b1d48;
-    font-family: 'GothamPro Bold';
     font-size: 18px;
     font-weight: 700; }
   .page-reset p {
     padding: 15px 0;
     color: #6c6c6c;
-    font-family: 'GothamPro Light';
+    font-weight: 300;
     font-size: 15px; }
 
 .form-info {
@@ -1236,7 +1399,7 @@ input[type="checkbox"] {
   margin: auto;
   max-width: 358px;
   color: #6c6c6c;
-  font-family: 'GothamPro Light';
+  font-weight: 300;
   font-size: 15px;
   letter-spacing: -0.25px;
   line-height: 22px;
@@ -1279,6 +1442,10 @@ input[type="checkbox"] {
   right: 40px; }
 
 /* modal email END */
+@media only screen and (max-width: 1440px) {
+  .decor-plus {
+    top: 0; } }
+
 @media only screen and (max-width: 1023px) {
   header {
     padding: 0; }
@@ -1529,6 +1696,8 @@ input[type="checkbox"] {
     z-index: 21;
     z-index: 101;
     opacity: 1 !important; }
+  .accordion .card .btn-link {
+    font-size: 18px; }
   /* mob menu hamburger END*/
   .section {
     padding-top: 20px; }
@@ -1695,6 +1864,10 @@ input[type="checkbox"] {
       background-color: transparent; }
     .email-block .form-control {
       display: none; }
+    .email-block__mob {
+      display: block; }
+    .email-block__desktop {
+      display: none; }
   .trading .form-group {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1706,7 +1879,24 @@ input[type="checkbox"] {
     background-image: none; }
   .btn-round {
     display: none;
-    top: 67px; } }
+    top: 67px; }
+  .error-block .block-wrapper__inner {
+    padding: 10px 0; }
+  .error-block .row {
+    display: block;
+    text-align: center; }
+  .error-block .social-block {
+    position: relative;
+    top: unset;
+    right: unset;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .error-number {
+    font-size: 120px; }
+  .header-dark .menu-hamburger span {
+    background-color: #000; } }
 
 @media only screen and (min-width: 1024px) {
   .menu-block {

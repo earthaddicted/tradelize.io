@@ -9,6 +9,7 @@ footer {
 	position: relative;
 	max-width: 100vw;
 	width: 100%;
+	font-family: 'GothamPro';
 
 	.block-wrapper__top {
 		display: flex;
@@ -35,7 +36,7 @@ footer {
 			display: flex;
 
 			a {
-				font-family: 'GothamPro Light';
+				// font-family: 'GothamPro Light';
 				color: #fff;
 				font-size: 16px;
 				font-weight: 400;
@@ -74,7 +75,7 @@ footer {
 
 		&__title {
 			color: #fff;
-			font-family: 'GothamPro Light';
+			// font-family: 'GothamPro Light';
 			font-size: 13px;
 			font-weight: 400;
 			letter-spacing: 0.81px;
@@ -84,7 +85,7 @@ footer {
 
 	.menu-item__ancor {
 		color: #fff;
-		font-family: 'GothamPro Light';
+		// font-family: 'GothamPro Light';
 		font-size: 13px;
 		font-weight: 400;
 		letter-spacing: 0.81px;
@@ -104,7 +105,7 @@ footer {
 	width: 100%;
 
 	p {
-		font-family: 'GothamPro Light';
+		// font-family: 'GothamPro Light';
 		font-size: 9px;
 		font-weight: 400;
 		letter-spacing: 0.56px;

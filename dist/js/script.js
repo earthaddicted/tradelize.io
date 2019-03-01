@@ -30,7 +30,7 @@ if ($(window).width() < 1024) {
 	})
 } else {
 	$('.menu-container').click(function(){
-		return false;
+		// return false;
 	});
 }
 // });
@@ -136,7 +136,12 @@ $('.btn-email').on('shown.bs.modal', function () {
     });
 
 })();
-
-
 /* ===== registration popup END ====== */
 
+/* ===== header different color ===== */
+
+if ($('.page-faq').length ) {
+    $('header').addClass('header-dark');
+} else {
+    $('header').removeClass('header-dark');
+}

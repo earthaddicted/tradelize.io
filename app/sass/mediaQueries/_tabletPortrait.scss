@@ -327,6 +327,10 @@
 		z-index: 101;
 		opacity: 1 !important;
 	}
+
+	.accordion .card .btn-link {
+		font-size: 18px;
+	}
 	/* mob menu hamburger END*/
 	//header END
 
@@ -573,6 +577,14 @@
 		.form-control {
 			display: none;
 		}
+
+		&__mob {
+			display: block;
+		}
+
+		&__desktop {
+			display: none;
+		}
 	}
 
 	.trading {
@@ -592,6 +604,35 @@
 	.btn-round {
 		display: none;
 		top: 67px;
+	}
+
+	.error-block {
+		.block-wrapper__inner {
+			padding: 10px 0;
+		}
+
+		.row {
+			display: block;
+			text-align: center;
+		}
+
+		.social-block {
+			position: relative;
+			top: unset;
+			right: unset;
+			justify-content: center;
+		}
+	}
+
+	.error-number {
+		font-size: 120px;
+	}
+
+	.header-dark {
+		.menu-hamburger span {
+			background-color: #000;
+		}
+
 	}
 }
 
