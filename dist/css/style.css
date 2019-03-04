@@ -753,6 +753,7 @@ footer {
 
 .block-scroll {
   width: 100%;
+  margin: auto;
   padding: 0;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -763,7 +764,12 @@ footer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
   .small-block__item {
     width: 167px;
     margin: 0 -2px 0 10px;
