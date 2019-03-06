@@ -62,6 +62,8 @@
 				position: fixed;
 				width: 100%;
 				margin: auto;
+
+				border-bottom: 1px solid transparent;
 			}
 
 			.lang-block::before .open,
@@ -675,6 +677,14 @@
 		&:nth-of-type(n+5) {
 			display: none;
 		}
+	}
+
+	.alert .section-wrapper {
+		flex-direction: column;
+	}
+
+	.alert-text {
+		padding-bottom: 20px;
 	}
 }
 

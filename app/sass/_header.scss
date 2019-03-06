@@ -91,6 +91,7 @@ header {
 	&__item {
 		text-transform: uppercase;
 		color: #919191;
+		font-family: 'GothamPro';
 		// font-family: 'GothamPro Regular';
 		font-size: 13px;
 		font-weight: 500;
@@ -123,6 +124,8 @@ header {
 }
 
 .header-dark {
+	border-bottom: 1px solid #f2f2f2;
+
 	.nav__ancor {
 		color: #000;
 	}
@@ -137,14 +140,16 @@ header {
 			display: none;
 		}
 	}
+
+	.lang-block::before {
+		border-top: 9px solid #000;
+	}
+
+	.lang__item-selected {
+		color: #000;
+	}
 }
 
-.lang-block::before {
-	border-top: 9px solid #000;
-}
 
-.lang__item-selected {
-	color: #000;
-}
 
 /* ============= HEADER END ============= */

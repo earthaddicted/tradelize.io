@@ -145,3 +145,19 @@ if ($('.page-faq').length ) {
 } else {
     $('header').removeClass('header-dark');
 }
+/* ===== header different color END ===== */
+
+
+/* ===== cookies ===== */
+
+(function() {
+    if ($('.alert').length > 0 ) {
+        $('.alert-btn').on('click', function(e){
+            $('.alert').slideToggle();
+            var date = new Date(new Date().getTime() + 3600 * 24 * 365 * 1000);
+            document.cookie = "cookies_accepted=1; path=/; expires=" + date.toUTCString();
+        })
+    }
+})();
+
+/* ===== cookies END ===== */

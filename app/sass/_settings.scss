@@ -463,3 +463,59 @@ h2 {
 	border: 1px solid #000;
 }
 
+.alert {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0;
+	background: linear-gradient(-134.72deg, #51E8CE 0%, #46BBE3 100%);
+	z-index: 5;
+	border-radius: 0;
+
+	.section-wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.btn {
+		font-family: 'GothamPro';
+		cursor: pointer;
+		white-space: nowrap;
+	}
+
+	&-text {
+		width: 100%;
+		padding-right: 20px;
+		color: #fff;
+		font-family: 'GothamPro';
+		font-weight: 500;
+
+		a {
+			padding: 0 2px;
+			color: #fff;
+			font-family: 'GothamPro';
+			font-weight: 300;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	a {
+		padding: 0 2px;
+		color: #fff;
+		font-family: 'GothamPro';
+		font-weight: 300;
+		text-decoration: underline;
+		cursor: pointer;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
